@@ -1,0 +1,19 @@
+{
+  "name": "ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "node server.js"
+  },
+  "author": "Emmanuel Henri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

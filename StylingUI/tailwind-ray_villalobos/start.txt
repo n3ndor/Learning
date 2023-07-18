@@ -1,0 +1,5 @@
+cd folder
+npm init vite tailwindcss3
+cd tailwindcss3
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
