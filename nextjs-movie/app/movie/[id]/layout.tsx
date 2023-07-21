@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { Movie } from '../../interfaces';
+import Link from 'next/link';
 import Image from "next/image";
 import { ReactNode } from 'react';
 
@@ -9,7 +9,7 @@ async function getData(id: string) {
     {
       headers: {
         accept: "application/json",
-        Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjODgxMTQyOGJhZmYxODUwYWIzNWNmYzQwZTUxOWQ4NCIsInN1YiI6IjY0Yjk0MjY3MTEzODZjMDBhZTBmMGE5NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ggvsQfs3Nhx1eoKgqudnPYTOW8nONnnahTogs5yEm9o"
+        Authorization: process.env.THEMOVIEDATABASE_API as string,
       },
       next: {
         revalidate: 60,
@@ -40,7 +40,7 @@ export default async function MovieId({ params, children }: { children: ReactNod
           <p><span className='underline'>Release Date:</span>{data.release_date}</p>
         </div>
 
-        <div className='w-1/2 font-medium bg-gray-100'>
+        <div className='w-1/2'>
           {children}
         </div>
 

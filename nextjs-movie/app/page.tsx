@@ -25,9 +25,9 @@ export default async function Home() {
           <h2 className='mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl'>Top Trending Movies</h2>
         </div>
         <div className='grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid:cols-4 xl:gap-8'>
-          {data.results.map((movie) => (
+          {data.results && data.results.map((movie) => (
             <div className='flex flex-col overflow-hidden rounded-lg border bg-white'>
-              <Link className='group relative block h-48 overflow-hidden bg-gray-100 md:h-64' href={`/movie/${movie.id}`}>
+              <Link href={`/movie/${movie.id}`} className='group relative block h-48 overflow-hidden bg-gray-100 md:h-64' >
                 <Image src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt='image movie banner' width={500} height={500} className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110' />
               </Link>
               <div className='flex flex-1 flex-col p-4 sm:p-6'>
