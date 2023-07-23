@@ -15,3 +15,6 @@ in package.json we can add "dev": "tailwindcss -i ./src/input.css -o ./dist/outp
 npm run dev
 
 playground => play.tailwindcss.com
+
+The files "pages/example/index" = "localhost:3000/easy"
+The file "pages/example/music" can be accessed on the URL "localhost:3000/example/music"
