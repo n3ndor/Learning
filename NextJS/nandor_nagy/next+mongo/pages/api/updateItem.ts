@@ -6,12 +6,12 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const client = await clientPromise;
     const db = client.db();
-    const { id } = req.query;
+    const { _id } = req.query;
     const { name, description } = req.body;
 
     const item = await db.collection("items").updateOne(
       {
-        _id: new ObjectId(id as string),
+        _id: new ObjectId(_id as string),
       },
       {
         $set: {

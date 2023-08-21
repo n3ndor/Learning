@@ -1,6 +1,7 @@
 import NewItemForm from '../components/NewItemForm';
 import clientPromise from '../lib/mongodb'
 import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
+import Link from 'next/link';
 
 type ConnectionStatus = {
   isConnected: boolean
@@ -20,7 +21,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
     const res = await fetch('http://localhost:3000/api/getItems');
     items = await res.json();
-    console.log("items:", items);
 
     return {
       props: {
@@ -82,7 +82,7 @@ export default function Home({
       <ul>
         {items && items.map((item: Item) => (
           <li key={item._id} className="border p-2 mb-2">
-            <h2 className="text-xl">{item.name}</h2>
+            <Link href={`/${item._id}`}>{item.name}</Link>
             <p>{item.description}</p>
           </li>
         ))}
