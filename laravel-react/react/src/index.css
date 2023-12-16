@@ -20,6 +20,23 @@ body {
     background-color: #f6f6f6;
 }
 
+.dashboard-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.welcome-message, .additional-info {
+    margin-top: 1rem;
+    color: #212121;
+}
+
+.dashboard-features {
+    list-style: inside;
+    text-align: left;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
 input {
     outline: 0;
     background: #ffffff;
