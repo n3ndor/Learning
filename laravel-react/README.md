@@ -1,66 +1,69 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1 align="center">Laravel-React Application</h1>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<h2>About the Project</h2>
 
-## About Laravel
+This project is a Laravel-React application that combines the robustness of PHP Laravel for backend operations with the dynamic capabilities of React for the frontend. The application features user authentication, user management (CRUD operations), and a streamlined, secure login/logout process. It uses a minimalistic SQLite database for efficient data storage.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<div align="center">
+  <img src="https://github.com/n3ndor/Learning/blob/main/laravel-react/screenshots/dashboard.png" alt="Dashboard View" width="600"/>
+  <p><strong>Dashboard View</strong></p>
+  <img src="https://github.com/n3ndor/Learning/blob/main/laravel-react/screenshots/login.png" alt="Login View" width="600"/>
+  <p><strong>Login View</strong></p>
+  <img src="https://github.com/n3ndor/Learning/blob/main/laravel-react/screenshots/users.png" alt="User Management View" width="600"/>
+  <p><strong>User Management View</strong></p>
+</div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<h2>Acknowledgments</h2>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Special thanks to <a href="https://github.com/thecodeholic">TheCodeholic</a> for creating the instructional video that inspired and guided this project.
 
-## Learning Laravel
+<h2>Getting Started</h2>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<h2>Prerequisites</h2> 
+<ul>
+    <li>PHP installed on your system</li>
+    <li>Composer (PHP package manager)</li>
+    <li>Node.js and npm (Node package manager)</li>
+</ul>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<h2>Installation</h2>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<h3>Sparse Checkout for the Laravel-React Project</h3>
+<p>To only get the <u>laravel-react</u> project from the Learning repository, follow these steps:</p>
 
-## Laravel Sponsors
+<ul>
+  <li><p>Initialize a new repository:</p>
+      <pre><code>git init Learning-laravel-react</code></pre></li>
+  <li><p>Add the main repository as a remote source:</p>
+      <pre><code>git remote add origin https://github.com/n3ndor/Learning.git</code></pre></li>
+  <li><p>Enable sparse checkout:</p>
+      <pre><code>git config core.sparseCheckout true</code></pre></li>
+  <li><p>Specify the laravel-react directory to check out:</p>
+      <pre><code>echo "laravel-react/*" >> .git/info/sparse-checkout</code></pre></li>
+  <li><p>Fetch the specified directory and checkout:</p>
+      <pre><code>git pull origin main</code></pre></li>
+</ul>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+<h3>Setting Up Laravel Backend</h3>
+<p>After checking out the repository:</p>
 
-### Premium Partners
+<ul>
+  <li><p>Navigate to the laravel-react directory:</p>
+      <pre><code>cd laravel-react</code></pre></li>
+  <li><p>Set up the environment:</p>
+      <pre><code>cp .env.example .env</code></pre>
+      <pre><code>composer install</code></pre>
+      <pre><code>php artisan serve</code></pre></li>
+</ul>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+<h3>Setting Up React Frontend</h3>
+<ul>
+  <li><p>Open a new terminal and navigate to the React directory within the laravel-react project:</p>
+      <pre><code>cd react</code></pre></li>
+  <li><p>Install npm packages:</p>
+      <pre><code>npm install</code></pre></li>
+  <li><p>Start the React development server:</p>
+      <pre><code>npm run dev</code></pre></li>
+</ul>
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<p>After successfully completing these steps, the application will be accessible at <code>localhost:3000</code> in your web browser.</p>
