@@ -16,7 +16,8 @@ const App = () => {
       </Text>
       <TextInput
         style={{ padding: 8, backgroundColor: '#f5f5f5' }}
-        onChangeText={text => null}
+        onChangeText={text => setName(text)}
+        secureTextEntry //changes the text to be obfuscated, like this: ****
       />
     </View>
   );
