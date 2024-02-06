@@ -3,14 +3,15 @@ import { View, Text } from 'react-native';
 
 const App = () => (
   <View style={{ flex: 1, justifyContent: 'center' }}>
-    <View style={{ width: 100, height: 100, backgroundColor: 'red' }} />
-    <View style={{ width: 100, height: 100, backgroundColor: 'green' }} />
-    <View style={{ width: 100, height: 100, backgroundColor: 'blue' }} />
+  <Box color="red" />
+  <Box color="green" />
+  <Box color="blue" />
+    
   </View>
 );
 
 export default App;
 
-export const Box = () => (
-  // Move a box `View` component here
+export const Box = (props) => (
+  <View style={{ width: 100, height: 100, backgroundColor: props.color }} />
 );
