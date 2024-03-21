@@ -11,5 +11,5 @@ run server (on port 8000):
 python manage.py runserver
 <!-- or python manage.py runserver 8080 -->
 
-creating teh Polls app
+creating the Polls app
 python manage.py startapp polls
