@@ -5,6 +5,7 @@ https://docs.djangoproject.com/en/5.0/intro/tutorial03/
 https://docs.djangoproject.com/en/5.0/intro/tutorial04/
 https://docs.djangoproject.com/en/5.0/intro/tutorial05/
 https://docs.djangoproject.com/en/5.0/intro/tutorial06/
+https://docs.djangoproject.com/en/5.0/intro/tutorial07/
 
 
 check version:
