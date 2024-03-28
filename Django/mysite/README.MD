@@ -8,6 +8,8 @@ https://docs.djangoproject.com/en/5.0/intro/tutorial06/
 https://docs.djangoproject.com/en/5.0/intro/tutorial07/
 https://docs.djangoproject.com/en/5.0/intro/tutorial08/
 
+https://docs.djangoproject.com/en/5.0/intro/reusable-apps/
+
 
 check version:
 python -m django --version
