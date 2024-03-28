@@ -8,7 +8,7 @@ import {
 export const Shadcn_Accordion = () => (
   <Accordion type="single" collapsible>
     <AccordionItem value="item-1">
-      <AccordionTrigger>Accordion?</AccordionTrigger>
+      <AccordionTrigger>Accordion? (click)</AccordionTrigger>
       <AccordionContent>
         Yes. Drop down style
       </AccordionContent>
