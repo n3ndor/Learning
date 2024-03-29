@@ -11,6 +11,7 @@ import { Shadcn_Calendar } from './shadcn/Calendar'
 import { Shadcn_DatePicker } from './shadcn/DatePicker'
 import { Shadcn_Card } from './shadcn/Card'
 import { Shadcn_Carousel } from './shadcn/Carousel'
+import { Shadcn_Checkbox } from './shadcn/Checkbox'
 
 const Components = () => {
   return (
@@ -28,6 +29,7 @@ const Components = () => {
       <Shadcn_DatePicker />
       <Shadcn_Card />
       <Shadcn_Carousel />
+      <Shadcn_Checkbox />
 
     </div>
 
