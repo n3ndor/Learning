@@ -14,6 +14,10 @@ import { Shadcn_Carousel } from './shadcn/Carousel'
 import { Shadcn_Checkbox } from './shadcn/Checkbox'
 import { Shadcn_Collapsible } from './shadcn/Collapsible'
 import { Shadcn_Combobox } from './shadcn/Combobox'
+import { Shadcn_Command } from './shadcn/Command'
+import { Shadcn_ContextMenu } from './shadcn/ContextMenu'
+import { Shadcn_Dialog } from './shadcn/Dialog'
+import { Shadcn_Drawer } from './shadcn/Drawer'
 
 const Components = () => {
   return (
@@ -33,7 +37,13 @@ const Components = () => {
       <Shadcn_Carousel />
       <Shadcn_Checkbox />
       <Shadcn_Collapsible />
-      <Shadcn_Combobox />
+      {/* <Shadcn_Combobox /> somehow is not working for me  */}
+      <Shadcn_Command />
+      <Shadcn_ContextMenu />
+      <Shadcn_Dialog />
+      <Shadcn_Drawer />
+
+
 
     </div>
 
