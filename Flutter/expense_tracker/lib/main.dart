@@ -58,6 +58,7 @@ void main() {
               ),
             ),
       ),
+      // themeMode: ThemeMode.system, // Default
       themeMode: ThemeMode.dark, // Change this to force dark or light mode
       home: const Expenses(),
     ),
