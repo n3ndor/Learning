@@ -6,3 +6,9 @@ Navigate to the folder of the app and run
 flutter run -d chrome
 
 in the terminal. This way no Android Studio is required, and you can use Chrome browser to review your app.
+
+Alternatively run 
+
+flutter run --release -d chrome
+
+in the terminal without debugging.
