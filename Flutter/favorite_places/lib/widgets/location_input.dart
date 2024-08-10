@@ -11,7 +11,7 @@ class LocationInput extends StatefulWidget {
 }
 
 class _LocationInputState extends State<LocationInput> {
-  Location? _pickedLocation;
+  // Location? _pickedLocation;
   var _isGettingLocation = false;
 
   void _getCurrentLocation() async {
@@ -19,7 +19,7 @@ class _LocationInputState extends State<LocationInput> {
 
     bool serviceEnabled;
     PermissionStatus permissionGranted;
-    LocationData locationData;
+    // LocationData locationData;
 
     serviceEnabled = await location.serviceEnabled();
     if (!serviceEnabled) {
@@ -41,7 +41,7 @@ class _LocationInputState extends State<LocationInput> {
       _isGettingLocation = true;
     });
 
-    locationData = await location.getLocation();
+    // locationData = await location.getLocation();
 
     setState(() {
       _isGettingLocation = false;
