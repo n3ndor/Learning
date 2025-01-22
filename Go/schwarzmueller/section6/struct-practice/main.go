@@ -14,8 +14,26 @@ type saver interface {
 	Save() error
 }
 
+// type displayer interface {
+// 	Display()
+// }
+
+type outputtable interface{
+	saver
+	Display()
+}
+
+// type outputtable interface{
+// 	Save() error
+// 	Display()
+// }
 
 func main(){
+
+	printSomething(1)
+	printSomething(1.5)
+	printSomething("Hello")
+
 	title, content := getNoteData()
 	todoText := getUserInput("Todo text: ")
 
@@ -33,19 +51,47 @@ func main(){
 		return
 	}
 
-	todo.Display()
-	err = saveData(todo)
+	err = outputData(todo)
 
 	if err != nil {
 		return
 	}
 
-	userNote.Display()
-	err = saveData(userNote)
+	outputData(userNote)
+}
 
-	if err != nil {
+func printSomething(value interface{}){ //alternatively use any instead if interface{}
+	// switch value.(type){
+	// case int:
+	// 	fmt.Println("Integer: ", value)
+	// case float64:
+	// 	fmt.Println("Float: ", value)
+	// case string:
+	// 	fmt.Println(value)
+	// }
+
+	intVal, ok := value.(int)
+	if ok {
+		fmt.Println("Integer: ", intVal)
 		return
 	}
+
+	floatVal, ok := value.(float64)
+	if ok {
+		fmt.Println("Integer: ", floatVal)
+		return
+	}
+
+	strVal, ok := value.(string)
+	if ok {
+		fmt.Println("Integer: ", strVal)
+		return
+	}
+}
+
+func outputData(data outputtable) error {
+	data.Display()
+	return saveData(data)
 }
 
 func saveData(data saver) error {
