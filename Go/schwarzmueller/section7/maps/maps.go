@@ -3,14 +3,18 @@ package main
 import "fmt"
 
 func main(){
-	prices := []float64{10.99, 8.99}
-	fmt.Println(prices)
+	
+	websites := map[string]string{
+		"Google": "https://google.com",
+		"Amazon Web Services": "https//aws.com",
+	}
+	fmt.Println(websites)
 
-	prices = append(prices, 5.99, 15.99, 27.99 )
-	fmt.Println(prices)
 
-	discoutPrices := []float64{101.99, 121.99, 137.99}
-	prices = append(prices, discoutPrices...)
-	fmt.Println(prices)
+	websites["Linkedin"] = "https://linkedin.com"
+	fmt.Println(websites)
+
+	delete(websites, "Google")
+	fmt.Println(websites)
 
 }
